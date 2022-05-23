@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.4.0
+Build-Jdk-Spec: 11
+Specification-Title: Keycloak Themes
+Specification-Version: 13.0
+Specification-Vendor: JBoss by Red Hat
+Implementation-Title: Keycloak Themes
+Implementation-Version: 13.0.0-SNAPSHOT
+Implementation-Vendor: JBoss by Red Hat
+Implementation-URL: http://keycloak.org/keycloak-themes
+Java-Vendor: Oracle Corporation
+Java-Version: 11.0.7
+Os-Arch: amd64
+Os-Name: Windows 10
+Os-Version: 10.0
+Scm-Connection: scm:git:git://github.com/keycloak/keycloak.git/keycloak-
+ themes
+Scm-Revision: 122e369e082974d83b61db18e53e64c9706127bd
+Scm-Url: https://github.com/keycloak/keycloak/tree/master/keycloak-theme
+ s/
+

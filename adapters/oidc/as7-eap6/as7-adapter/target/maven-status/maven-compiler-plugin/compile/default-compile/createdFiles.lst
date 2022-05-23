@@ -1,0 +1,2 @@
+org\keycloak\adapters\jbossweb\AuthenticatedActionsValve.class
+org\keycloak\adapters\jbossweb\KeycloakAuthenticatorValve.class

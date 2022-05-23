@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<feature-pack xmlns="urn:wildfly:feature-pack:1.1">
+    <dependencies>
+        <artifact name="org.wildfly:wildfly-feature-pack"/>
+    </dependencies>
+    <artifact-versions>
+        <artifact groupId="com.fasterxml.jackson.core" artifactId="jackson-annotations" version="2.10.5"/>
+        <artifact groupId="com.fasterxml.jackson.core" artifactId="jackson-core" version="2.10.5"/>
+        <artifact groupId="com.fasterxml.jackson.core" artifactId="jackson-databind" version="2.10.5"/>
+        <artifact groupId="com.fasterxml.jackson.dataformat" artifactId="jackson-dataformat-cbor" version="2.10.5"/>
+        <artifact groupId="com.fasterxml.jackson.datatype" artifactId="jackson-datatype-jdk8" version="2.10.5"/>
+        <artifact groupId="com.fasterxml.jackson.jaxrs" artifactId="jackson-jaxrs-base" version="2.10.5"/>
+        <artifact groupId="com.fasterxml.jackson.jaxrs" artifactId="jackson-jaxrs-json-provider" version="2.10.5"/>
+        <artifact groupId="com.fasterxml.jackson.module" artifactId="jackson-module-jaxb-annotations" version="2.10.5"/>
+        <artifact groupId="com.github.ua-parser" artifactId="uap-java" version="1.4.3"/>
+        <artifact groupId="com.google.guava" artifactId="guava" version="25.0-jre"/>
+        <artifact groupId="com.google.zxing" artifactId="core" version="3.4.0"/>
+        <artifact groupId="com.google.zxing" artifactId="javase" version="3.4.0"/>
+        <artifact groupId="com.googlecode.owasp-java-html-sanitizer" artifactId="owasp-java-html-sanitizer" version="20191001.1"/>
+        <artifact groupId="com.h2database" artifactId="h2" version="1.4.197"/>
+        <artifact groupId="com.openshift" artifactId="openshift-restclient-java" version="8.0.0.Final"/>
+        <artifact groupId="com.squareup.okhttp3" artifactId="okhttp" version="3.14.2"/>
+        <artifact groupId="com.squareup.okio" artifactId="okio" version="1.17.2"/>
+        <artifact groupId="com.sun.activation" artifactId="jakarta.activation" version="1.2.1"/>
+        <artifact groupId="com.sun.istack" artifactId="istack-commons-runtime" version="3.0.10"/>
+        <artifact groupId="com.sun.istack" artifactId="istack-commons-tools" version="3.0.10"/>
+        <artifact groupId="com.sun.mail" artifactId="jakarta.mail" version="1.6.5"/>
+        <artifact groupId="com.sun.xml.bind.external" artifactId="rngom" version="2.3.3-b02"/>
+        <artifact groupId="com.webauthn4j" artifactId="webauthn4j-core" version="0.12.0.RELEASE"/>
+        <artifact groupId="com.webauthn4j" artifactId="webauthn4j-util" version="0.12.0.RELEASE"/>
+        <artifact groupId="commons-codec" artifactId="commons-codec" version="1.6"/>
+        <artifact groupId="commons-io" artifactId="commons-io" version="2.6"/>
+        <artifact groupId="commons-lang" artifactId="commons-lang" version="2.6"/>
+        <artifact groupId="io.undertow" artifactId="undertow-core" version="2.2.2.Final"/>
+        <artifact groupId="io.undertow" artifactId="undertow-servlet" version="2.2.2.Final"/>
+        <artifact groupId="jakarta.persistence" artifactId="jakarta.persistence-api" version="2.2.3"/>
+        <artifact groupId="org.aesh" artifactId="aesh" version="2.4"/>
+        <artifact groupId="org.apache.commons" artifactId="commons-lang3" version="3.10"/>
+        <artifact groupId="org.apache.httpcomponents" artifactId="httpclient" version="4.5.13"/>
+        <artifact groupId="org.apache.httpcomponents" artifactId="httpcore" version="4.4.13"/>
+        <artifact groupId="org.apache.httpcomponents" artifactId="httpmime" version="4.5.13"/>
+        <artifact groupId="org.apache.james" artifactId="apache-mime4j" version="0.6"/>
+        <artifact groupId="org.apache.kerby" artifactId="kerby-asn1" version="2.0.0"/>
+        <artifact groupId="org.apache.santuario" artifactId="xmlsec" version="2.1.4"/>
+        <artifact groupId="org.bouncycastle" artifactId="bcpkix-jdk15on" version="1.65"/>
+        <artifact groupId="org.bouncycastle" artifactId="bcprov-jdk15on" version="1.65"/>
+        <artifact groupId="org.dom4j" artifactId="dom4j" version="2.1.3"/>
+        <artifact groupId="org.eclipse.microprofile.metrics" artifactId="microprofile-metrics-api" version="2.3"/>
+        <artifact groupId="org.freemarker" artifactId="freemarker" version="2.3.29"/>
+        <artifact groupId="org.glassfish" artifactId="jakarta.json" version="1.1.6"/>
+        <artifact groupId="org.glassfish.jaxb" artifactId="xsom" version="2.3.3-b02"/>
+        <artifact groupId="org.hibernate" artifactId="hibernate-core" version="5.3.20.Final"/>
+        <artifact groupId="org.infinispan" artifactId="infinispan-cachestore-remote" version="11.0.4.Final"/>
+        <artifact groupId="org.infinispan" artifactId="infinispan-core" version="11.0.4.Final"/>
+        <artifact groupId="org.infinispan" artifactId="infinispan-jboss-marshalling" version="11.0.4.Final"/>
+        <artifact groupId="org.jboss" artifactId="jboss-dmr" version="1.5.1.Final"/>
+        <artifact groupId="org.jboss.logging" artifactId="jboss-logging" version="3.4.1.Final"/>
+        <artifact groupId="org.jboss.resteasy" artifactId="resteasy-client" version="3.13.2.Final"/>
+        <artifact groupId="org.jboss.resteasy" artifactId="resteasy-jackson2-provider" version="3.13.2.Final"/>
+        <artifact groupId="org.jboss.resteasy" artifactId="resteasy-jaxb-provider" version="3.13.2.Final"/>
+        <artifact groupId="org.jboss.resteasy" artifactId="resteasy-jaxrs" version="3.13.2.Final"/>
+        <artifact groupId="org.jboss.resteasy" artifactId="resteasy-multipart-provider" version="3.13.2.Final"/>
+        <artifact groupId="org.jboss.spec.javax.servlet" artifactId="jboss-servlet-api_4.0_spec" version="2.0.0.Final"/>
+        <artifact groupId="org.jboss.spec.javax.servlet.jsp" artifactId="jboss-jsp-api_2.3_spec" version="2.0.0.Final"/>
+        <artifact groupId="org.jboss.spec.javax.transaction" artifactId="jboss-transaction-api_1.3_spec" version="2.0.0.Final"/>
+        <artifact groupId="org.jboss.spec.javax.ws.rs" artifactId="jboss-jaxrs-api_2.1_spec" version="2.0.1.Final"/>
+        <artifact groupId="org.jboss.spec.javax.xml.bind" artifactId="jboss-jaxb-api_2.3_spec" version="2.0.0.Final"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-authz-policy-common" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-common" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-core" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-js-adapter" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-kerberos-federation" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-ldap-federation" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-model-infinispan" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-model-jpa" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-saml-core" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-saml-core-public" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-server-spi" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-server-spi-private" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-services" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-sssd-federation" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-wildfly-adduser" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-wildfly-extensions" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.keycloak" artifactId="keycloak-wildfly-server-subsystem" version="13.0.0-SNAPSHOT"/>
+        <artifact groupId="org.liquibase" artifactId="liquibase-core" version="3.5.5"/>
+        <artifact groupId="org.slf4j" artifactId="slf4j-api" version="1.7.30"/>
+        <artifact groupId="org.twitter4j" artifactId="twitter4j-core" version="4.0.7"/>
+        <artifact groupId="org.wildfly" artifactId="wildfly-clustering-infinispan-marshalling" version="21.0.2.Final"/>
+        <artifact groupId="org.wildfly" artifactId="wildfly-ee" version="21.0.2.Final"/>
+        <artifact groupId="org.wildfly" artifactId="wildfly-feature-pack" version="21.0.2.Final" extension="zip"/>
+        <artifact groupId="org.wildfly" artifactId="wildfly-undertow" version="21.0.2.Final"/>
+        <artifact groupId="org.wildfly" artifactId="wildfly-web-common" version="21.0.2.Final"/>
+        <artifact groupId="org.wildfly.common" artifactId="wildfly-common" version="1.5.2.Final"/>
+        <artifact groupId="org.wildfly.core" artifactId="wildfly-controller" version="13.0.3.Final"/>
+        <artifact groupId="org.wildfly.core" artifactId="wildfly-core-feature-pack" version="13.0.3.Final" extension="zip"/>
+        <artifact groupId="org.wildfly.core" artifactId="wildfly-server" version="13.0.3.Final"/>
+        <artifact groupId="org.wildfly.core" artifactId="wildfly-version" version="13.0.3.Final"/>
+        <artifact groupId="org.wildfly.security.elytron-web" artifactId="undertow-server" version="1.8.0.Final"/>
+        <artifact groupId="org.yaml" artifactId="snakeyaml" version="1.14"/>
+    </artifact-versions>
+    <config>
+        <standalone template="configuration/standalone/template.xml" subsystems="configuration/standalone/subsystems.xml" output-file="standalone/configuration/standalone.xml"/>
+        <standalone template="configuration/standalone/template.xml" subsystems="configuration/standalone/subsystems-ha.xml" output-file="standalone/configuration/standalone-ha.xml">
+            <property name="jgroups.supplement" value=""/>
+        </standalone>
+        <domain template="configuration/domain/template.xml" subsystems="configuration/domain/subsystems.xml" output-file="domain/configuration/domain.xml"/>
+        <host template="configuration/host/host.xml" subsystems="configuration/host/subsystems.xml" output-file="domain/configuration/host.xml"/>
+        <host template="configuration/host/host-master.xml" subsystems="configuration/host/subsystems.xml" output-file="domain/configuration/host-master.xml"/>
+        <host template="configuration/host/host-slave.xml" subsystems="configuration/host/subsystems.xml" output-file="domain/configuration/host-slave.xml"/>
+    </config>
+    <file-permissions>
+        <permission value="755">
+            <filter pattern="*.sh" include="true"/>
+            <filter pattern="*" include="false"/>
+        </permission>
+        <permission value="700">
+            <filter pattern="*/tmp/auth" include="true"/>
+            <filter pattern="*" include="false"/>
+        </permission>
+        <permission value="600">
+            <filter pattern="*-users.properties" include="true"/>
+            <filter pattern="*/.installation" include="true"/>
+            <filter pattern="*" include="false"/>
+        </permission>
+    </file-permissions>
+</feature-pack>

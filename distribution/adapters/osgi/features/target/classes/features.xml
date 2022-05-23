@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  ~ Copyright 2016 Red Hat, Inc. and/or its affiliates
+  ~ and other contributors as indicated by the @author tags.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.0.0" name="keycloak-13.0.0-SNAPSHOT">
+
+    <feature name="keycloak-adapter-core" version="13.0.0-SNAPSHOT" resolver="(obr)">
+        <details>The keycloak adapter core stuff</details>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpclient-osgi/4.5.2</bundle>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpcore-osgi/4.4.4</bundle>
+        <bundle dependency="true">mvn:org.bouncycastle/bcprov-jdk15on/1.65</bundle>
+        <bundle dependency="true">mvn:org.bouncycastle/bcpkix-jdk15on/1.65</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-core/2.10.5</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-annotations/2.10.5</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-databind/2.10.5</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.10.5</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.10.5</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.10.5</bundle>
+        <bundle dependency="true">mvn:org.jboss.logging/jboss-logging/3.4.1.Final</bundle>
+        <bundle>mvn:org.keycloak/keycloak-common/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-core/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-authz-client/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-adapter-spi/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-adapter-core/13.0.0-SNAPSHOT</bundle>
+    </feature>
+
+    <feature name="keycloak-osgi-adapter" version="13.0.0-SNAPSHOT" resolver="(obr)">
+        <details>The keycloak adapter core stuff</details>
+        <feature>keycloak-adapter-core</feature>
+        <feature version="[2.3,8)">http-whiteboard</feature>
+        <bundle>mvn:org.keycloak/keycloak-osgi-adapter/13.0.0-SNAPSHOT</bundle>
+    </feature>
+
+    <feature name="keycloak-jetty9-adapter" version="13.0.0-SNAPSHOT" resolver="(obr)">
+        <details>The keycloak Jetty 9.2 adapter (Fuse 6.3)</details>
+        <feature>keycloak-adapter-core</feature>
+        <feature version="[9.2,9.3)">jetty</feature>
+        <bundle>mvn:org.keycloak/keycloak-jetty-adapter-spi/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-jetty-core/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-jetty92-adapter/13.0.0-SNAPSHOT</bundle>
+    </feature>
+
+    <!-- Keycloak adapter for PaxWeb jetty provider -->
+<!--
+    <feature name="keycloak-pax-http-jetty" version="13.0.0-SNAPSHOT">
+        <details>Keycloak Pax-Web adapter for Jetty 9.4</details>
+        <feature>keycloak-adapter-core</feature>
+        <feature version="[7.1,9)">pax-web-core</feature>
+        <bundle>mvn:org.keycloak/keycloak-osgi-adapter/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-jetty-adapter-spi/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-jetty-core/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-jetty94-adapter/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-pax-web-jetty94/13.0.0-SNAPSHOT</bundle>
+    </feature>
+ -->
+
+    <!-- Keycloak adapter for PaxWeb undertow provider -->
+    <feature name="keycloak-pax-http-undertow" version="13.0.0-SNAPSHOT">
+        <details>Keycloak Pax-Web adapter for Undertow</details>
+        <feature>keycloak-adapter-core</feature>
+        <feature version="[7.1,9)">pax-web-core</feature>
+        <bundle>mvn:org.keycloak/keycloak-osgi-adapter/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-undertow-adapter/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-undertow-adapter-spi/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-pax-web-undertow/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-camel-undertow/13.0.0-SNAPSHOT</bundle>
+    </feature>
+
+    <!-- Keycloak adapter for PaxWeb tomcat provider -->
+<!--
+    <feature name="keycloak-pax-http-tomcat" version="13.0.0-SNAPSHOT">
+        <details>Keycloak Pax-Web adapter for Tomcat 8</details>
+        <feature>keycloak-adapter-core</feature>
+        <feature version="[7.1,9)">pax-web-core</feature>
+        <bundle>mvn:org.keycloak/keycloak-osgi-adapter/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-tomcat-core-adapter/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-tomcat-adapter-spi/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-tomcat8-adapter/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-pax-web-tomcat8/13.0.0-SNAPSHOT</bundle>
+    </feature>
+ -->
+
+    <feature name="keycloak-servlet-filter-adapter" version="13.0.0-SNAPSHOT" resolver="(obr)">
+        <details>Keycloak servlet filter adapter</details>
+        <feature>keycloak-adapter-core</feature>
+        <bundle>mvn:org.keycloak/keycloak-servlet-filter-adapter/13.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.keycloak/keycloak-servlet-adapter-spi/13.0.0-SNAPSHOT</bundle>
+    </feature>
+
+    <feature name="keycloak-jaas" version="13.0.0-SNAPSHOT" resolver="(obr)">
+        <details>The keycloak JAAS configuration</details>
+        <feature>keycloak-adapter-core</feature>
+        <bundle>mvn:org.keycloak/keycloak-osgi-jaas/13.0.0-SNAPSHOT</bundle>
+    </feature>
+
+    <feature name="keycloak" version="13.0.0-SNAPSHOT" resolver="(obr)">
+        <details>The keycloak adapter core stuff</details>
+        <feature>keycloak-osgi-adapter</feature>
+        <feature>keycloak-jaas</feature>
+    </feature>
+
+</features>

@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1647937187767
+Build-Jdk: 17.0.2
+Built-By: Nury
+Bundle-DocURL: http://www.jboss.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Keycloak OSGI JAAS Realm Configuration
+Bundle-SymbolicName: org.keycloak.keycloak-osgi-jaas
+Bundle-Vendor: JBoss by Red Hat
+Bundle-Version: 13.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Implementation-Title: Keycloak OSGI JAAS Realm Configuration
+Implementation-URL: http://keycloak.org/keycloak-osgi-jaas
+Implementation-Vendor: JBoss by Red Hat
+Implementation-Vendor-Id: org.keycloak
+Implementation-Version: 13.0.0-SNAPSHOT
+Import-Package: org.apache.karaf.jaas.config,org.keycloak.adapters.jaas;
+ version="13.0.0.SNAPSHOT",org.osgi.service.blueprint;version="[1.0.0,2.
+ 0.0)";resolution:=optional
+Java-Vendor: Eclipse Adoptium
+Java-Version: 17.0.2
+Os-Arch: amd64
+Os-Name: Windows 10
+Os-Version: 10.0
+Scm-Connection: scm:git:git://github.com/keycloak/keycloak.git/keycloak-
+ osgi-jaas
+Scm-Url: https://github.com/keycloak/keycloak/tree/master/keycloak-osgi-
+ jaas/
+Specification-Title: Keycloak OSGI JAAS Realm Configuration
+Specification-Vendor: JBoss by Red Hat
+Specification-Version: 13.0.0-SNAPSHOT
+Tool: Bnd-1.50.0

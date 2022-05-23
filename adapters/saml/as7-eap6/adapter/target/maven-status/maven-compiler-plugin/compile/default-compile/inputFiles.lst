@@ -1,0 +1,4 @@
+D:\Projects\DefensePoint\whitesource-testcases-java\IntegrationTests\keycloakVersion13\adapters\saml\as7-eap6\adapter\src\main\java\org\keycloak\adapters\saml\jbossweb\infinispan\SsoSessionCacheListener.java
+D:\Projects\DefensePoint\whitesource-testcases-java\IntegrationTests\keycloakVersion13\adapters\saml\as7-eap6\adapter\src\main\java\org\keycloak\adapters\saml\jbossweb\SamlAuthenticatorValve.java
+D:\Projects\DefensePoint\whitesource-testcases-java\IntegrationTests\keycloakVersion13\adapters\saml\as7-eap6\adapter\src\main\java\org\keycloak\adapters\saml\jbossweb\infinispan\SsoCacheSessionIdMapperUpdater.java
+D:\Projects\DefensePoint\whitesource-testcases-java\IntegrationTests\keycloakVersion13\adapters\saml\as7-eap6\adapter\src\main\java\org\keycloak\adapters\saml\jbossweb\infinispan\InfinispanSessionCacheIdMapperUpdater.java

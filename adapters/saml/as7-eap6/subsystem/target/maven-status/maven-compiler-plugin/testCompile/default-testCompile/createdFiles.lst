@@ -1,0 +1,2 @@
+org\keycloak\subsystem\saml\as7\SubsystemParsingAllowedClockSkewTestCase.class
+org\keycloak\subsystem\saml\as7\SubsystemParsingTestCase.class
